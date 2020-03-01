@@ -1,0 +1,352 @@
+﻿<html>
+<meta charset="UTF-8">
+<head>
+<style type="text/css">
+.Naslov {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+}
+.slika {
+	border: 1px solid #000;
+}
+</style>
+<script type="text/javascript">
+	// http://freehostedscripts.net/hc.php?id=MzE4NTQwNXx8MXwx
+	function hits() {
+		setTimeout(function(){ 
+			var fhsh = document.createElement('script');
+			var fhs_id_h = "3185405";
+			fhsh.src = "http://s1.freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=Visits&a=1";
+			document.head.appendChild(fhsh); 
+			// document.write("<span id='h_"+fhs_id_h+"'></span>");
+		}, 1);
+	}
+</script>
+</head>
+<body>
+<font size=1>Zadnja izmjena 02.12.2019.</font>
+<div align="center" class="Naslov">
+  <a href="zamger.user.js" onclick="hits();">Zamger view 2.0</a><br>
+<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,3593778,4,204,260,30,00001010']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3593778&101" alt="web log free" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</div>
+Funkcije:
+<ul>
+  <li>Dodaje link do izvještaja za odabrani predmet (Slika 1.)</li>
+  <li>Dodaje imena i prezimena studenata pored njihovih indeksa na svakom izvještaju (Slika 2.)</li>
+  <li>Nakon što otvorite izvještaj možete se kretati naprijed-nazad po godinama (Slika 2.)</li>  
+  <li><b><font color="blue">Novo: podaci o prolaznosti na predmetu (Slika 2.)</font></b></li>
+  <li><b><font color="blue">Novo: podaci o prolaznosti po parcijalama (Slika 2.), integralni ispiti se ne uzimaju u obzir</font></b></li>
+  <li><b><font color="blue">Novo: dodan veći dio indeksa nove generacije studenata 2018/2019</font></b></li>
+</ul>
+<p align="left">Listu indeksa za prepoznavanje možete manualno modifikovati. <br />Upute za instaliranje i modifikovanje su date u nastavku stranice u obliku screenshot slika...</p>
+<p align="center"><img src="1.jpg" alt="Slika 1" width="790" height="265" class="slika" /><br />
+<em>Slika 1</em>. <em>Dodan je link do izvještaja</em></p>
+<p align="center"><img src="2.jpg" alt="Slika 2" width="759" height="556" class="slika" /><br />
+<em>Slika 2. Dio izvještaja za predmet Diskretna matematika</em></p>
+<p align="left">Instaliranje dodatka (ekstenzije) za Google Chrome pretraživač:</p>
+<ul>
+  <li>Potrebno je instalirati Addon po imenu &quot;Tampermonkey&quot;, sa <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank">ovog linka</a> (Slika 3.)</li>
+  <li>Kliknite na &quot;Besplatno&quot;</li>
+  <li>Nakon klika na &quot;Dodaj&quot;, proširenje je dodano (Slika 4.)</li>
+</ul>
+<p align="center"><img src="3.jpg" alt="Slika 3" width="843" height="541" class="slika" /><br />
+<em>Slika 3. Addon Tampermonkey</em></p>
+<p align="center"><img src="4.jpg" alt="Slika 4" width="385" height="165" class="slika" /><br />
+  <em>Slika 4. Završeno dodavanje</em></p>
+<p align="left">Instaliranje dodatka (ekstenzije) za Mozilla Firefox pretraživač:</p>
+<ul>
+  <li>Potrebno je instalirati Addon po imenu &quot;Greasemonkey&quot;, sa <a href="https://addons.mozilla.org/en-US/firefox/addon/greasemonkey" target="_blank">ovog linka</a> (Slika 5.)</li>
+  <li>Kliknite na &quot;Add to Firefox&quot;</li>
+  <li>Nakon klika na &quot;Install&quot;, potrebno je kliknuti na &quot;Restart&quot; ili manualno restartovati pretraživač (Slika 6.)</li>
+</ul>
+<p align="center"><img src="5.jpg" alt="Slika 5" width="849" height="488" class="slika" /><br />
+<em>Slika 5. Addon Greasemonkey</em></p>
+<p align="center"><img src="6.jpg" alt="Slika 6" width="374" height="101" class="slika" /><br />
+<em>Slika 6. Restartujte pretraživač</em></p>
+<p align="left">Nakon što je instaliran potrebni dodatak, možete instalirati i &quot;Zamger view&quot; skriptu jednostavnim klikom na ovaj link: <a href="zamger.user.js" onclick="hits();">Zamger view</a>.</p>
+<p align="left">Modifikacija skripte i dodavanje indeksa, na pretraživaču &quot;Google Chrome&quot;:</p>
+<ul>
+  <li>Desni klik na ikonu &quot;Tampermonkey&quot; otvara izbornik u kojem treba kliknuti na &quot;Opcije&quot; (Slika 7.)</li>
+  <li>Odabrati &quot;Installed userscripts&quot; (Slika 8.)</li>
+  <li>Klikom na &quot;Zamger view&quot; otvara se kod skripte gdje se mogu dodavati novi indeksi (Slika 9.)</li>
+  <li>Pritiskanjem kombinacije &quot;Ctrl+S&quot;, ili klikom na &quot;Save&quot; ikonu iz alatne trake sačuvajte promjene</li>
+</ul>
+<p align="center"><img src="7.jpg" alt="Slika 6" width="196" height="175" class="slika" /><br />
+<em>Slka 7. Desni klik na ikonu &quot;Tampermonkey&quot; </em></p>
+<p align="center"><img src="8.jpg" alt="Slika 8" width="910" height="167" class="slika" /><br>
+<em>Slika 8. Odabrati &quot;Installed userscripts&quot;</em></p>
+<p align="center"><img src="9.jpg" alt="Slika 9" width="655" height="600" class="slika" /><br />
+<em>Slika 9. Modifikovanje liste </em></p>
+<p align="left">Modifikacija skripte i dodavanje indeksa, na pretraživaču &quot;Mozilla Firefox&quot;:</p>
+<ul>
+  <li>Kliknuti na ikonu &quot;Greasemonkey&quot;, pa odabrati &quot;Manage User Scripts&quot; (Slika 10.)</li>
+  <li>Desni klik na skriptu &quot;Zamger view&quot;, pa odabrati &quot;Edit&quot; (Slika 11.)</li>
+  <li>Pritiskanjem kombinacije &quot;Ctrl+S&quot;, ili klikom na &quot;Save&quot; ikonu iz alatne trake sačuvajte promjene</li>
+</ul>
+<p align="center"><img src="10.jpg" alt="Slika 10" width="224" height="211" class="slika" /><br />
+<em>Slika 10. Klik na ikonu &quot;Greasemonkey&quot;</em></p>
+<p align="center"><img src="11.jpg" alt="Slika 11" width="602" height="404" class="slika" /><br />
+<em>Slika 11. Desni klik na skriptu &quot;Zamger view&quot;</em></p>
+<p align="center"><img src="12.jpg" width="415" height="552" alt="Slika 12" class="slika"/><br />
+<em>Slika 12. Modifikovanje liste s indeksima </em></p>
+<p align="left"><strong>Prilog:</strong> izvršni kod skripte:</p>
+</body>
+</html>
+<plaintext>(function($, undefined) {
+  $(function() {
+    function getVar(cilj, poruka) {
+      var pronadeno = "";
+      var poz = poruka.indexOf(cilj);
+      if (poz != -1) {
+        poz += cilj.length;
+        while (
+          poz < poruka.length && (
+            (poruka.charAt(poz) >= 'A' && poruka.charAt(poz) <= 'Z') ||
+            (poruka.charAt(poz) >= 'a' && poruka.charAt(poz) <= 'z') ||
+            (poruka.charAt(poz) >= '0' && poruka.charAt(poz) <= '9') || poruka.charAt(poz) == '/'
+          )) {
+          pronadeno += poruka.charAt(poz++);
+        }
+      }
+      return pronadeno;
+    }
+    String.prototype.replaceAll = function(str1, str2, ignore) {
+      return this.replace(new RegExp(str1.replace(/([\/\,\!\\\^\$\{\}\[\]\(\)\.\*\+\?\|\<\>\-\&])/g,"\\$&"),(ignore?"gi":"g")),(typeof(str2)=="string")?str2.replace(/\$/g,"$$$$"):str2);
+    }
+    var strLink = document.URL;
+    var sta = getVar('sta=', strLink);
+    var predmet = getVar('predmet=', strLink);
+    var ag = getVar('ag=', strLink);
+    var arhiva = getVar('arhiva=', strLink);
+    var skrati = getVar('skrati=', strLink);
+    var dugme_part1 = '<a href="https://zamger.etf.unsa.ba/?sta=izvjestaj/predmet&';
+    var dugme_part2 = '"><input type="button" style="cursor:pointer;" value="Izvještaj o ocjenama tvoje generacije"></a>';
+    var dugme_part3 = '"><input type="button" style="cursor:pointer;" value="Izvještaj o ocjenama prethodne generacije"></a>';
+    var dugme_part4 = '"><input type="button" style="cursor:pointer;" value="Godina prije"></a>';
+    var dugme_part5 = '"><input type="button" style="cursor:pointer;" value="Godina poslije"></a>';
+    if ((sta == 'student/predmet' || sta == 'student/zavrsni') && predmet.length !== 0 && ag.length !== 0) {
+      var ag_pret = (parseInt(ag, 10) - 1).toString();
+      var new_html = '<table cellspacing="0" cellpadding="0" border="0" style="position:absolute;left:224px;top:55px;"><tr><td style="padding:0px;">';
+      new_html += dugme_part1;
+      new_html += 'predmet=' + predmet;
+      new_html += '&ag=' + ag;
+      if (arhiva.length !== 0) new_html += '&sm_arhiva=' + arhiva;
+      if (skrati.length !== 0) new_html += '&skrati=' + skrati;
+      new_html += '&razdvoji_ispite=da';
+      new_html += dugme_part2;
+      new_html += '</td><td style="padding:0px; padding-left: 10px;">';
+      new_html += dugme_part1;
+      new_html += 'predmet=' + predmet;
+      new_html += '&ag=' + ag_pret;
+      if (arhiva.length !== 0) new_html += '&sm_arhiva=' + arhiva;
+      if (skrati.length !== 0) new_html += '&skrati=' + skrati;
+      new_html += '&razdvoji_ispite=da';
+      new_html += dugme_part3;
+      new_html += '</td></tr></table>';
+      new_html += document.body.innerHTML;
+      document.body.innerHTML = new_html;
+    } else if (sta == 'izvjestaj/predmet' && predmet.length !== 0 && ag.length !== 0) {
+      var ag_pret = (parseInt(ag, 10) - 1).toString();
+      var ag_next = (parseInt(ag, 10) + 1).toString();
+      var ag_parsed = parseInt(ag, 10);
+      var numStudents=0; var numFail=0;
+      var num6=0; var num7=0; var num8=0; var num9=0; var num10=0;
+      var specialPredmeti10=["23","162","186", "8"]; // id-evi predmeta gdje parcijale nose maksimalno 10 poena
+      var startingWithAg10=[[["0","-1"]], [["0","-1"]], [["0","-1"]], [["0","-1"]]];
+      var specialPredmeti40=["40"]; // id-evi predmeta gdje parcijale nose maksimalno 40 poena
+      var startingWithAg40=[[["12","-1"]]];
+      // [[["1","3"],["4","5"]], [["7","-1"],["3","5"]], [["8","-1"]]] -> Vrem. intervali kada vrijedi special racunanje poena za 3 predmeta
+      var granicaProlaza=10; // Granica prolaza za vecinu predmeta
+      var indexSpec10=$.inArray(predmet, specialPredmeti10);
+      if (indexSpec10!==-1) {
+          for (var i=0; i<startingWithAg10[indexSpec10].length; i++) {
+              // Prolazimo kroz sve intervale vezane za ovaj predmet
+              var ag1=startingWithAg10[indexSpec10][i][0];
+              var ag2=startingWithAg10[indexSpec10][i][1];
+              if ((ag1>ag2 && ag1<=ag_parsed) ||
+                  (ag1<=ag2 && ag1<=ag_parsed && ag_parsed<=ag2)) {
+                  granicaProlaza=5;
+                  break;
+              }
+          }
+      }
+      var indexSpec40=$.inArray(predmet, specialPredmeti40);
+      if (indexSpec40!==-1) {
+          for (var i=0; i<startingWithAg40[indexSpec40].length; i++) {
+              // Prolazimo kroz sve intervale vezane za ovaj predmet
+              var ag1=startingWithAg40[indexSpec40][i][0];
+              var ag2=startingWithAg40[indexSpec40][i][1];
+              if ((ag1>ag2 && ag1<=ag_parsed) ||
+                  (ag1<=ag2 && ag1<=ag_parsed && ag_parsed<=ag2)) {
+                  granicaProlaza=20;
+                  break;
+              }
+          }
+      }
+      var parc1Polozilo=[]; var parc2Polozilo=[];
+      var parc1PoloziloTot=0; var parc2PoloziloTot=0;
+      var parcAnyPolozilo=0;
+      var parcBothPolozilo=0;
+      var parc1Izaslo=[]; var parc2Izaslo=[];
+      var parc1IzasloTot=0; var parc2IzasloTot=0;
+      var parcAnyIzaslo=0;
+      var parcBothIzaslo=0;
+      var indexesParc1=[]; var indexesParc2=[];
+      var indexOffset=0;
+      var prolazPrvi=1;
+      $("tr td:contains('Konačna')").each(function() {
+          var roditeljTable=$(this).parent().parent();
+          var allRows=$(roditeljTable).find("tr");
+          var redniBr=0;
+          for (var i=0; i<=allRows.length-1; i++) {
+              if ($($(allRows)[i]).find("td").length>redniBr) {
+                  redniBr=$($(allRows)[i]).find("td").length;
+              }
+          }
+          for (var i=0; i<=1; i++) {
+              $(roditeljTable).find("tr td:nth-child("+(redniBr-i).toString()+"):not(:contains('Konačna')):not(:contains('.')):not(:contains('%')):not(:contains('UKUPNO'))").each(function() {
+                  var tekst=$(this).text();
+                  numStudents++;
+                  if (tekst=="6") num6++;
+                  else if (tekst=="7") num7++;
+                  else if (tekst=="8") num8++;
+                  else if (tekst=="9") num9++;
+                  else if (tekst=="10") num10++;
+                  else numFail++;
+              });
+          }
+          if (prolazPrvi) {
+              $(roditeljTable).find("tr td:contains('Konačna')").each(function() {
+                  var firstRow=$(this).parent();
+                  indexOffset=$(firstRow).find("td[rowspan='2']").length-2;
+              });
+              $(roditeljTable).find("tr td:contains('I parc'):not(:contains('II parc'))").each(function() {
+                  indexesParc1.push($(this).index()+indexOffset);
+                  parc1Polozilo.push(0);
+                  parc1Izaslo.push(0);
+              });
+              $(roditeljTable).find("tr td:contains('II parc')").each(function() {
+                  indexesParc2.push($(this).index()+indexOffset);
+                  parc2Polozilo.push(0);
+                  parc2Izaslo.push(0);
+              });
+              prolazPrvi=0;
+          } else {
+              indexesParc1=[];
+              indexesParc2=[];
+              $(roditeljTable).find("tr td:contains('I parc'):not(:contains('II parc'))").each(function() {
+                  indexesParc1.push($(this).index()+indexOffset);
+              });
+              $(roditeljTable).find("tr td:contains('II parc')").each(function() {
+                  indexesParc2.push($(this).index()+indexOffset);
+              });
+          }
+          $(roditeljTable).find("tr:not(:contains('Konačna')):not(:contains(' parc')):not(:has(td[colspan]))").each(function() {
+              if (redniBr==$(this).find("td").length) {
+                  var polozeno1=0;
+                  var izaslo1=0;
+                  for(var i=0; i<indexesParc1.length; i++) {
+                      if ($(this).find("td").eq(indexesParc1[i]).text()!='/') {
+                          parc1Izaslo[i]++;
+                          izaslo1=1;
+                          var poeni=parseFloat($(this).find("td").eq(indexesParc1[i]).text());
+                          if (poeni>=granicaProlaza) {
+                              parc1Polozilo[i]++;
+                              polozeno1=1;
+                          }
+                      }
+                  }
+                  if (polozeno1) parc1PoloziloTot++;
+                  if (izaslo1) parc1IzasloTot++;
+                  var polozeno2=0;
+                  var izaslo2=0;
+                  for(var i=0; i<indexesParc2.length; i++) {
+                      if ($(this).find("td").eq(indexesParc2[i]).text()!='/') {
+                          parc2Izaslo[i]++;
+                          izaslo2=1;
+                          var poeni=parseFloat($(this).find("td").eq(indexesParc2[i]).text());
+                          if (poeni>=granicaProlaza) {
+                              parc2Polozilo[i]++;
+                              polozeno2=1;
+                          }
+                      }
+                  }
+                  if (polozeno2) parc2PoloziloTot++;
+                  if (izaslo2) parc2IzasloTot++;
+                  if (polozeno1 || polozeno2) parcAnyPolozilo++; // Polozena barem 1 parcijala
+                  if (izaslo1 || izaslo2) parcAnyIzaslo++; // Izaslo na barem 1 parcijalu
+                  if (izaslo1 && izaslo2) {
+                      parcBothIzaslo++; // Izaslo na obje parcijale (barem po jednom na svaku)
+                      if (polozeno1 && polozeno2) {
+                          parcBothPolozilo++; // Polozilo obje parcijale (barem po jednom svaku)
+                      }
+                  }
+              }
+          });
+      });
+      $("tr td:nth-child(2)").each(function() {
+        if ($(this).text().indexOf(".") === -1) {
+          var elementi = $(this).text().match(/\d+/g);
+          if (elementi !== null) {
+            var zadnji = elementi[elementi.length - 1];
+            if (typeof indeksi[zadnji] !== 'undefined')
+              $(this).html($(this).html() + '&nbsp;<font color="blue">' + indeksi[zadnji].replaceAll(" ", "&nbsp;") + '</font>');
+            else
+              $(this).html($(this).html() + '&nbsp;<font color="red">UNKNOWN&nbsp;POKEMON</font>');
+          }
+        }
+      });
+      var new_html = '<table cellspacing="0" cellpadding="0" border="0" ><tr><td style="padding:0px;">';
+      new_html += dugme_part1;
+      new_html += 'predmet=' + predmet;
+      new_html += '&ag=' + ag_pret;
+      if (arhiva.length !== 0) new_html += '&sm_arhiva=' + arhiva;
+      if (skrati.length !== 0) new_html += '&skrati=' + skrati;
+      new_html += '&razdvoji_ispite=da';
+      new_html += dugme_part4;
+      new_html += '</td><td style="padding:0px; padding-left: 10px;">';
+      new_html += dugme_part1;
+      new_html += 'predmet=' + predmet;
+      new_html += '&ag=' + ag_next;
+      if (arhiva.length !== 0) new_html += '&sm_arhiva=' + arhiva;
+      if (skrati.length !== 0) new_html += '&skrati=' + skrati;
+      new_html += '&razdvoji_ispite=da';
+      new_html += dugme_part5;
+      new_html += '</td></tr></table>';
+      new_html +="<table cellspacing=5 cellpadding=0 border=1><tr><td valign='top'><table cellspacing=5 cellpadding=0 border=0><tr><td width='120'>Ukupno studenata</td><td width='40'>"+numStudents.toString()+"</td><td>100.00%</td></tr>";
+      new_html +="<tr><td>Upisalo ocjenu</td><td>"+(numStudents-numFail).toString()+"</td><td><b><font color='green'>"+((numStudents-numFail)*100./numStudents).toFixed(2).toString()+"%</font></b></td></tr>";
+      new_html +="<tr><td>Nije upisalo ocjenu</td><td>"+numFail.toString()+"</td><td><b><font color='red'>"+(numFail*100./numStudents).toFixed(2).toString()+"%</font></b></td></tr>";
+      new_html +="<tr><td>Ocjena 6</td><td>"+num6.toString()+"</td><td>"+(num6*100./numStudents).toFixed(2).toString()+"%</td></tr>";
+      new_html +="<tr><td>Ocjena 7</td><td>"+num7.toString()+"</td><td>"+(num7*100./numStudents).toFixed(2).toString()+"%</td></tr>";
+      new_html +="<tr><td>Ocjena 8</td><td>"+num8.toString()+"</td><td>"+(num8*100./numStudents).toFixed(2).toString()+"%</td></tr>";
+      new_html +="<tr><td>Ocjena 9</td><td>"+num9.toString()+"</td><td>"+(num9*100./numStudents).toFixed(2).toString()+"%</td></tr>";
+      new_html +="<tr><td>Ocjena 10</td><td>"+num10.toString()+"</td><td>"+(num10*100./numStudents).toFixed(2).toString()+"%</td></tr></table>";
+      new_html +="</td><td valign='top'><table cellspacing=5 cellpadding=0 border=0>";
+      new_html +="<tr><td width='130'>Položilo obje parcijale</td><td width='65'>"+parcBothPolozilo.toString()+" / "+parcAnyIzaslo.toString()+"</td><td><b><font color='green'>"+(parcBothPolozilo*100./parcAnyIzaslo).toFixed(2).toString()+"%</font></b></td></tr>";
+      new_html +="<tr><td>Položilo bar jednu</td><td>"+parcAnyPolozilo.toString()+" / "+parcAnyIzaslo.toString()+"</td><td><b><font color='green'>"+(parcAnyPolozilo*100./parcAnyIzaslo).toFixed(2).toString()+"%</font></b></td></tr>";
+      new_html +="<tr><td>Položilo I parcijalu</td><td>"+parc1PoloziloTot.toString()+" / "+parc1IzasloTot.toString()+"</td><td><b><font color='green'>"+(parc1PoloziloTot*100./parc1IzasloTot).toFixed(2).toString()+"%</font></b></td></tr>";
+      new_html +="<tr><td>Položilo II parcijalu</td><td>"+parc2PoloziloTot.toString()+" / "+parc2IzasloTot.toString()+"</td><td><b><font color='green'>"+(parc2PoloziloTot*100./parc2IzasloTot).toFixed(2).toString()+"%</font></b></td></tr>";
+      if (indexesParc1.length>1) {
+          for (var i=0; i<indexesParc1.length; i++)
+              new_html +="<tr><td>[Rok "+(i+1).toString()+"] I parcijalu</td><td>"+parc1Polozilo[i].toString()+" / "+parc1Izaslo[i].toString()+"</td><td><font color='blue'>"+(parc1Polozilo[i]*100./parc1Izaslo[i]).toFixed(2).toString()+"%</font></td></tr>";
+          for (var i=0; i<indexesParc2.length; i++)
+              new_html +="<tr><td>[Rok "+(i+1).toString()+"] II parcijalu</td><td>"+parc2Polozilo[i].toString()+" / "+parc2Izaslo[i].toString()+"</td><td><font color='blue'>"+(parc2Polozilo[i]*100./parc2Izaslo[i]).toFixed(2).toString()+"%</font></td></tr>";
+      }
+      new_html += "</table></td></tr></table>"+document.body.innerHTML;
+      document.body.innerHTML = new_html;
+    }
+  });
+})(window.jQuery.noConflict(true));
